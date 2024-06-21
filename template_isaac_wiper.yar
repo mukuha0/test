@@ -10,7 +10,7 @@ rule RULE_NAME {
         hash5 = "afe1f2768e57573757039a40ac40f3c7471bb084599613b3402b1e9958e0d27a"
         description = ""
     strings:
-        $s1 = "ADD YOUR SIGNATURE HERE"
+        $s1 = "A"
     condition:
         uint16(0) == 0x5a4d and // MZ
         uint32(uint32(0x3c)) == 0x00004550 and //PE
